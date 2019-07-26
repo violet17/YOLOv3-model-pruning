@@ -1,5 +1,45 @@
 # YOLOv3-model-pruning
 
+# Update:
+补充prune_utils.py. 性能待测。
+
+# requirements:
+
++ numpy>=1.13
++ tensorboardX
+```
+pip install tensorboardX
+```
+```
+git clone https://github.com/lanpa/tensorboardX && cd tensorboardX && python setup.py install
+```
++ albumentations
+```
+pip install albumentations
+```
+```
+conda install -c conda-forge imgaug
+conda install albumentations -c albumentations
+```
++ terminaltables
+```
+pip install terminaltables
+```
++ tqdm
++ torch
++ random 
++ matplotlib
++ .......
+
+
+
+
+
+
+
+
+
+
 用 YOLOv3 模型在一个开源的人手检测数据集 [oxford hand](http://www.robots.ox.ac.uk/~vgg/data/hands/) 上做人手检测，并在此基础上做模型剪枝。对于该数据集，对 YOLOv3 进行 channel pruning 之后，模型的参数量、模型大小减少 80% ，FLOPs 降低 70%，前向推断的速度可以达到原来的 200%，同时可以保持 mAP 基本不变（*这个效果只是针对该数据集的，不一定能保证在其他数据集上也有同样的效果*，之后有时间的话会在其他数据集上进行测试）。
 
 感兴趣的可以给个 star :star2:，也欢迎提 Issue 一起讨论 :smile:
