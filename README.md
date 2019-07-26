@@ -10,6 +10,7 @@
 ```
 pip install tensorboardX
 ```
+or
 ```
 git clone https://github.com/lanpa/tensorboardX && cd tensorboardX && python setup.py install
 ```
@@ -17,6 +18,7 @@ git clone https://github.com/lanpa/tensorboardX && cd tensorboardX && python set
 ```
 pip install albumentations
 ```
+or
 ```
 conda install -c conda-forge imgaug
 conda install albumentations -c albumentations
